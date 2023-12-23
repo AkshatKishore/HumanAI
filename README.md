@@ -1,4 +1,4 @@
-<img src="[https://your-image-url.type](https://github.com/AkshatKishore/HumanAI/assets/141553703/3f441831-b7d3-42e2-989e-4d9e03222c47)" width="50" height="50"> 
+![HumanAI Logo](https://github.com/AkshatKishore/HumanAI/assets/141553703/66028614-48da-4d8a-9f5a-4bc436d076a0)
 # HumanAI
 This document contains technical details on the development of 3 publicly available ML models: Palpitate, Harmonious-Minds, and Eini. 
 The complete methodology, dataset details, mathematical explication, and deployment details can be found in this paper: https://ijisrt.com/assets/upload/files/IJISRT23FEB247.pdf 

@@ -1,5 +1,7 @@
+![HumanAI Logo](https://github.com/AkshatKishore/HumanAI/assets/141553703/3f441831-b7d3-42e2-989e-4d9e03222c47)
 # HumanAI
 This document contains technical details on the development of 3 publicly available ML models: Palpitate, Harmonious-Minds, and Eini. 
+The complete methodology, dataset details, mathematical explication, and deployment details can be found in this paper: https://ijisrt.com/assets/upload/files/IJISRT23FEB247.pdf 
 
 ## (1) Eini - Mental Health Chatbot
 ### 1. Data Preprocessing and Tokenization
@@ -198,9 +200,17 @@ Various machine learning models are considered for training the Harmonious-Minds
 #### 3.2 Feature Scaling
 As a preprocessing step, feature scaling is performed using the Min-Max Scaler to normalize numerical features.
 scaler = MinMaxScaler()
+
+```
 train_df['Age'] = scaler.fit_transform(train_df[['Age']])
+```
+
 #### 3.3 Model Training
 The dataset is split into training and testing sets. A K-Nearest Neighbors (KNN) classifier is selected and trained on the training set. Hyperparameter tuning is performed using Randomized Search to find the optimal values.
+
+![Untitled2781](https://github.com/AkshatKishore/HumanAI/assets/141553703/286ccfb1-4b7d-44e2-8d8e-89250ac56570)
+![image](https://github.com/AkshatKishore/HumanAI/assets/141553703/70e4d8ff-d842-4046-b942-44b3e633011f)
+
 #### 3.4 Making Predictions
 Finally, the trained KNN model is used to make predictions for a given set of input features, including age, sex, family history, benefits, care options, anonymity, leave, work interference, coworkers, and remote work.
 
@@ -237,6 +247,10 @@ nb = GaussianNB()
 # Fit the model on the training data
 nb.fit(x_train, y_train)
 ```
+
+![23385Capture6](https://github.com/AkshatKishore/HumanAI/assets/141553703/ed7119ea-6130-4f3e-a4da-ec294305603b)
+![34725nv1](https://github.com/AkshatKishore/HumanAI/assets/141553703/995b07c2-06f4-4244-9b82-13166bccefa9)
+![HumanAI Logo](https://github.com/AkshatKishore/HumanAI/assets/141553703/f39e1406-42e7-4e6b-923e-edec03f17557)
 
 #### 2.2 Model Accuracy
 The accuracy of the Naive Bayes model is calculated using the test set.
